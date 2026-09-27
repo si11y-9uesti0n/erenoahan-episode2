@@ -58837,6 +58837,10 @@
       </main>
       <script>
 
+          //テキストを揃える
+          document.querySelectorAll('.message-text').forEach(el => {
+              el.textContent = el.textContent.replace(/^[ \t]+/gm, '');
+          });
               //変数宣言
               const messages = document.querySelectorAll(".message")
               const tabs = document.querySelectorAll(".tabs button");
